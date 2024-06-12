@@ -11,28 +11,28 @@
 	<form id="internship-form">
         <h2>Internship Form</h2>
         <div>
-            <label for="first-name-input">First Name</label>
-            <input type="text" id="first-name-input">
+            <label for="first-name-input" class="form-label">First Name</label>
+            <input type="text" id="first-name-input" class='form-control' required>
             <span class="error" id="first-name-error">First name required!</span>
         </div>
         <div>
             <label for="last-name-input">Last Name</label>
-            <input type="text" id="last-name-input">
+            <input type="text" id="last-name-input" required>
             <span class="error" id="last-name-error">Last name required!</span>
         </div>
         <div>
             <label for="email-input">Email Address</label>
-            <input type="email" id="email-input">
+            <input type="email" id="email-input" required>
             <span class="error" id="email-error">Email required!</span>
         </div>
         <div>
             <label for="college-input">College</label>
-            <input type="text" id="college-input">
+            <input type="text" id="college-input" required>
             <span class="error" id="college-error">Please provide a valid college.</span>
         </div>
         <div>
-            <label for="graduation-year-input">Graduation Year</label>
-            <select id="graduation-year-input">
+            <label for="grad-year-select" class="form-label">Graduation Year</label>
+            <select id="grad-year-select">
                 <option value="">Choose...</option>
                 <option value="2020">2020</option>
                 <option value="2021">2021</option>
@@ -42,8 +42,8 @@
             <span class="error" id="graduation-year-error">Please select a valid Graduation Year.</span>
         </div>
         <div>
-            <label for="roll-no-input">Roll No.</label>
-            <input type="text" id="roll-no-input">
+            <label for="roll-no-input" class="form-label">>Roll No.</label>
+            <input type="text" id="roll-no-input" required>
             <span class="error" id="roll-no-error">Please provide a valid Roll no.</span>
         </div>
         <div>

@@ -5,7 +5,7 @@
             const lastName = document.getElementById('last-name-input').value.trim();
             const email = document.getElementById('email-input').value.trim();
             const college = document.getElementById('college-input').value.trim();
-            const graduationYear = document.getElementById('graduation-year-input').value;
+            const graduationYear = document.getElementById('grad-year-select').value;
             const rollNo = document.getElementById('roll-no-input').value.trim();
             const conditions = document.getElementById('conditions-checkbox').checked;
 
