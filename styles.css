@@ -1,5 +1,4 @@
-.error {
-     color: red;
-     display: none;
- }
-
+.invalid-feedback {
+            color: red;
+            display: none;
+        }

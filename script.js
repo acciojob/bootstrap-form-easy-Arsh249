@@ -1,4 +1,4 @@
- function validateForm() {
+function validateForm() {
             let isValid = true;
 
             const firstName = document.getElementById('first-name-input').value.trim();
@@ -10,52 +10,52 @@
             const conditions = document.getElementById('conditions-checkbox').checked;
 
             if (!firstName) {
-                document.getElementById('first-name-error').style.display = 'inline';
+                document.querySelector('#first-name-input + .invalid-feedback').style.display = 'inline';
                 isValid = false;
             } else {
-                document.getElementById('first-name-error').style.display = 'none';
+                document.querySelector('#first-name-input + .invalid-feedback').style.display = 'none';
             }
 
             if (!lastName) {
-                document.getElementById('last-name-error').style.display = 'inline';
+                document.querySelector('#last-name-input + .invalid-feedback').style.display = 'inline';
                 isValid = false;
             } else {
-                document.getElementById('last-name-error').style.display = 'none';
+                document.querySelector('#last-name-input + .invalid-feedback').style.display = 'none';
             }
 
             if (!email) {
-                document.getElementById('email-error').style.display = 'inline';
+                document.querySelector('#email-input + .invalid-feedback').style.display = 'inline';
                 isValid = false;
             } else {
-                document.getElementById('email-error').style.display = 'none';
+                document.querySelector('#email-input + .invalid-feedback').style.display = 'none';
             }
 
             if (!college) {
-                document.getElementById('college-error').style.display = 'inline';
+                document.querySelector('#college-input + .invalid-feedback').style.display = 'inline';
                 isValid = false;
             } else {
-                document.getElementById('college-error').style.display = 'none';
+                document.querySelector('#college-input + .invalid-feedback').style.display = 'none';
             }
 
             if (!graduationYear) {
-                document.getElementById('graduation-year-error').style.display = 'inline';
+                document.querySelector('#grad-year-select + .invalid-feedback').style.display = 'inline';
                 isValid = false;
             } else {
-                document.getElementById('graduation-year-error').style.display = 'none';
+                document.querySelector('#grad-year-select + .invalid-feedback').style.display = 'none';
             }
 
             if (!rollNo) {
-                document.getElementById('roll-no-error').style.display = 'inline';
+                document.querySelector('#roll-no-input + .invalid-feedback').style.display = 'inline';
                 isValid = false;
             } else {
-                document.getElementById('roll-no-error').style.display = 'none';
+                document.querySelector('#roll-no-input + .invalid-feedback').style.display = 'none';
             }
 
             if (!conditions) {
-                document.getElementById('conditions-error').style.display = 'inline';
+                document.querySelector('#conditions-checkbox + .invalid-feedback').style.display = 'inline';
                 isValid = false;
             } else {
-                document.getElementById('conditions-error').style.display = 'none';
+                document.querySelector('#conditions-checkbox + .invalid-feedback').style.display = 'none';
             }
 
             if (isValid) {
